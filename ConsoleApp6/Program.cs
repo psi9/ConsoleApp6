@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ConsoleApp6 {
 
@@ -39,7 +40,18 @@ namespace ConsoleApp6 {
             Delegator delegator = Privet;
             Delegator delegator2 = () => Console.WriteLine("222");
 
-            
+            var xxx = new List<int>(3);
+            xxx.Add(1);
+            xxx.Add(2);
+            xxx.Add(3);
+            xxx.Add(4);
+            xxx.Add(5);
+            xxx.Add(6);
+            foreach (var item in xxx)
+            {
+                Console.WriteLine(item);
+            }
+
             Console.WriteLine("Hello World!");
         }
     }
